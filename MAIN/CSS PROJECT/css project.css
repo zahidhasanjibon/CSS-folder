@@ -1,0 +1,35 @@
+*{margin:0;padding:0;}
+body{background-color:#eee;font-family:'Nerko One', cursive;}
+
+.container{background-color:#e4f9f4;
+            max-width:1000px;
+            margin:0 auto;
+            padding:20px;}
+
+.pic-size{height:120px;width:90px;
+            border:3px white solid;border-radius:50%;
+            float:left;}
+.header-bio{float:left;
+    padding:30px;
+    }
+h1,h3{color:#10999e;}
+h6{color:red;}
+.header-contact{float:right;padding:30px;}
+.header-contact a{text-decoration:none;color:teal;font-weight:bold;}
+.header-contact a:hover{color:blue;}
+.header-contact a:active{color:yellow;}
+.div-clear{clear:both;}
+hr{border:solid black 3px;
+    width:100%;
+    margin:20px auto;
+    border-bottom:none;border-left:none;border-right:none;}
+.content{margin-top:30px;}
+.left-div{width:40%;float:left;}
+.right-div{color:#10999e;width:60%;float:left;}
+.common-hr{border:1px teal solid;width:100%;
+            margin:20px auto;border-bottom:none;border-left:none;border-right:none;}
+.edu-templete-left{width:45%;float:left;}
+.edu-templete-right{width:45%;float:right;}
+.footer{background-color:black;color:white;text-align:center;padding:10px;}
+.footer a{text-decoration:none;padding:20px;}
+.footer p{margin-top:20px;}

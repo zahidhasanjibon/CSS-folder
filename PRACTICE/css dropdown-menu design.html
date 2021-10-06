@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown menu</title>
+    <style>
+        .menu-bar{
+                    background-color:teal;
+                    text-align:center;
+                    padding:20px 10px;
+        }
+        .menu-bar a{
+                    color:white;
+                    text-decoration:none;
+                    padding:10px 20px;
+                    font-size:1.2rem;
+
+                    }   
+
+        .container{
+                    position:relative;
+                    display:inline;
+        }
+        .content{   
+                    
+                    position:absolute;
+                    top:30px;
+                    right:0px;
+                    text-align:left;
+                    min-width:100px;
+                    display:none;
+        }
+        .content a{
+                    background-color:teal;
+                    display:block;
+                    color:white;
+                    
+        }
+        .content a:hover{
+                            background-color:brown;
+        }
+        .container:hover .content{
+                                    display:block;
+        }    
+    
+    </style>
+
+</head>
+<body>
+    <div class="menu-bar">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+
+        <div class="container">
+
+            <a href="#">Contact</a>
+
+            <div class="content">
+
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Yahoo</a>
+            </div>
+       
+        </div>
+
+
+        <a href="#">About</a>
+    
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid design</title>
+        <style>
+                *{
+                    margin:0;
+                    padding:0;
+                    
+                    }
+        body{  
+                height:100vh;
+                background-color:brown;
+                display:grid;
+                grid-template-rows:min-content auto min-content;
+                grid-template-areas:
+                'h'
+                'm'
+                'm'
+                'm'
+                'f'
+             }
+        header{
+                grid-area:h;
+                background-color:pink;
+                width:100%;
+                border:solid;
+                height:100px;
+                text-align:center;
+                font-weight:bolder;
+                
+                 }
+        main{  
+                background: green;
+                grid-area:m;
+                width:100%;
+                height:545px;
+        
+                }
+        article{
+                    display:grid;
+                    grid-template-areas:
+                                        's1 aside1'
+                                        's2 aside2'
+                                        's3 .';
+                    height:100%;
+                    
+                 }
+        section{
+                    border:solid;
+                    text-align:center;
+        }
+        
+        aside{
+                background: coral;
+                border:solid;
+                text-align:center;
+        }
+
+        footer{
+                display:grid;
+                grid-area:f;
+                width:100%;
+                grid-template-areas: 'nav1 nav2';
+                border:solid;
+                background: rgb(58, 37, 37);
+                height:100px;
+                text-align:center;
+
+                }
+
+        #sec{grid-area:s1;}
+        #sec2{grid-area:s2;}
+        #sec3{grid-area:s3;}
+        #aside1{grid-area:aside1;}
+        #aside2{grid-area:aside2;}
+        #nav1{grid-area:nav1;}
+        #nav2{grid-area:nav2;}
+
+
+        </style>
+
+</head>
+<body>
+   <header>
+       <nav><h1>zahid hasan jibon</h1></nav>
+   </header>
+   <main>
+    <article>
+        <section id="sec1">section1</section>
+        <section id="sec2">section2</section>
+        <section id="sec3">section3</section>
+
+        <aside id="aside1">aside1</aside>
+        <aside id="aside2">aside2</aside>
+    </article>
+
+   </main>
+    
+   <footer>
+    <nav id="nav1">nav1</nav>
+    <nav id="nav2">nav2</nav>
+
+   </footer>
+    
+
+
+
+
+</body>
+</html>

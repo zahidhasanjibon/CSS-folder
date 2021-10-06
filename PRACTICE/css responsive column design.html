@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive column design</title>
+    <style>
+            *{box-sizing:border-box;}
+
+            .container{
+                        display:flex;
+                        flex-wrap:wrap;
+
+                        }
+
+            .content{
+                         padding:10px;
+                        flex:25%;
+                }
+
+            @media only screen and (max-width:992px){
+                                                        .content{
+                                                                flex:50%;
+                                                        }
+            }
+            @media only screen and (max-width:600px){
+                                                        .container{
+                                                                flex-direction:column;
+                                                        }
+            }
+                        
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>html</h1>
+            <p>At ut gubergren et dolores, sed duo gubergren justo est justo sea gubergren amet aliquyam, voluptua erat kasd labore est sed et lorem sadipscing takimata, tempor voluptua duo sed.</p>
+        </div>
+        <div class="content">
+            <h1>css</h1>
+            <p>Sanctus gubergren lita dolore kasd sit. Ut et stet lorem invidunt sed, eirmod et voluptua gubergren nonumy dolores sadipscing tempor ipsum. Et takimata justo nonumy sea et. Et.</p>
+        </div>
+        <div class="content">
+            <h1>java</h1>
+            <p>At ut magnbore gubergren et dolores, sed duo gubergren justo est justo sea gubergren amet aliquyam, voluptua erat kasd labore est sed et lorem sadipscing takimata, tempor voluptua duo sed.</p>
+        </div>
+        <div class="content">
+            <h1>python</h1>
+            <p>Sanctus gubsed amet et accusam no, diam et duo dolore clita dolore kasd sit. Ut et stet lorem invidunt sed, eirmod et voluptua gubergren nonumy dolores sadipscing tempor ipsum. Et takimata justo nonumy sea et. Et.</p>
+        </div>
+
+    </div>
+</body>
+</html>

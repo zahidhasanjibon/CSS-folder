@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>css nav bar design</title>
+        <style>
+            body{box-sizing:border-box;}
+            .container{
+                background-color:teal;
+                        display:flex;
+                        justify-content:flex-end;
+
+                    }
+            .container > div{
+                                font-size:1.5rem;
+                                margin:15px;
+                                padding:10px;
+                                color:white;                 
+            }
+            .container > div:hover{background-color:green;}
+
+            @media only screen and (max-width:600px){
+                                                    
+                                                   .container{
+                                                                
+                                                                flex-direction:column;
+                                                   }
+                                                   .container > div{
+                                                                    background-color:purple;
+                                                                    text-align:center;
+                                                                    border:1px solid purple;border-radius:15px;
+                                                                    margin:10px;
+                                                   }
+                                                   .container > div:hover{
+                                                                            background-color:tomato;
+                                                   }
+                                                    
+
+            }
+
+
+        </style>
+
+
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="h">home</div>
+            <div class="g">gallery</div>
+            <div class="c">contact</div>
+        </div>
+
+
+
+    </body>
+
+</html>

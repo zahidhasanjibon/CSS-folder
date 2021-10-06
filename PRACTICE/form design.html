@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <TITLE>FORM DESIGN</TITLE>
+        <style>
+            input[type=text]{width:100%;padding:10px 20px;
+                                margin:10px 0;border:2px solid blue;
+                                box-sizing:border-box;border-radius:5px;font-size:15px;
+                                background-color:lightblue;}
+
+            #search{padding-left:40px;font-size:20px;
+                    background-image:url(baseline_search_black_18dp.png);
+                     background-repeat:no-repeat;
+                     background-position:2px 6px;background-color:white;
+                     width:200px;
+                     transition:ease-in-out 1s;
+                    }
+            #search:hover{width:100%;background-color:tomato;color:white;
+                           
+                            }
+            #textarea{resize:none;border:2px solid red;border-radius:9px;
+                        padding:10px;}
+            input[type=submit],input[type=reset]{border:none;background-color:teal;
+                                                    padding:10px;cursor:pointer;}
+            #select{padding:20px;width:50%;background-color:tomato;}
+            #select option{background-color:blue;color:white;}
+            #submit:hover{padding:20px;outline:none;
+            }
+            #reset:hover{padding:20px;}
+            .prag::first-letter{color:chocolate;font-size:3rem;}
+            .prag::after{content:">"}
+            .action::before{content:"";
+                            width:100%;height:10px;background-color:rgb(3, 3, 0);
+                            display:inline-block;}
+            .action::after{content:"";
+                            width:100%;height:10px;background-color:rgb(3,3,0);
+                            display:inline-block;}
+            
+
+        </style>
+    </head>
+    <body>
+        <form class="action">
+
+            <div class="search">
+                <input id="search" type="text" name="text" placeholder="search">
+            </div>
+
+
+            <div class="fname">
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" name="fname">
+            </div>
+
+            <div class="lname">
+                <label for="lname">Last Name</label>
+                <input id="lname" type="text" name="lname">
+            </div>
+            <div>
+                <label for="pass">password</label>
+                <input id="pass" type="password" name="password">
+            </div><br>
+
+            <p><textarea id="textarea" cols="25" rows="9" >write comment</textarea></p>
+            
+            <input id="submit" type="submit" value="submit">
+            <input id="reset" type="reset" value="reset"><br><br>
+        
+
+            <select id="select" name="subject name">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">python</option>    
+            </select>
+        </form>
+
+        <p class="prag">No justo dolor accusam ipsum magna voluptua rebum, kasd ea stet et consetetur, duo nonumy sed rebum sanctus ipsum, dolor ipsum invidunt sit at dolor et eos et amet, rebum.</p>
+
+
+
+
+    </body>
+</html>

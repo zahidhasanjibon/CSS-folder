@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+        <style>
+            .container{
+                        background-color:gray;
+            
+                        padding:20px;
+                        width:500px;
+                        margin:0 auto;
+                        
+                        }
+            .container li{
+                                list-style-type:none;
+                                margin:50px 0;
+                                font-size:1.3rem;
+                                font-weight:bolder;
+                                text-transform:uppercase;
+                                position:relative;
+                        }
+            .container li::before{
+                                    position:absolute;
+                                    content:'';
+                                    height:25px;
+                                    width:100%;
+                                    background-color:rgb(170,167,173);
+                                    border-radius:1000px;
+                                    top:calc(100% + 10px);
+                                    left:0px;
+                                 }
+            .container li::after{
+                                    position:absolute;
+                                    content:'';
+                                    height:25px;
+                                    width:0;
+                                    background-color:rgb(249,249,250);
+                                    border-radius:1000px;
+                                    top:calc(100% + 10px);
+                                    left:0px;
+
+                                    animation-duration:3s;
+                                    animation-delay:.8s;
+                                    animation-timing-function:linear;
+                                    animation-iteration-count:infinite;
+                                    animation-direction:forwards;
+
+                                
+                                }
+                          
+            .container li.h::after{
+                                        animation-name:h;
+                                }
+            .container li.c::after{
+                                        animation-name:c;
+                                }
+
+            .container li.j::after{
+                                        animation-name:j;
+                                }
+            .container li.b::after{
+                                        animation-name:b;
+                                }
+            .container li.ja::after{
+                                        animation-name:ja;
+                                }
+            .container li.cc::after{
+                                        animation-name:cc;
+                                }
+
+
+
+
+            @keyframes h{
+                        to{
+                                width:90%;
+                                background-color:rgb(46, 202, 46)
+                        }
+            }
+            
+            
+            @keyframes c{
+                        to{
+                                width:70%;
+                                background-color:orange;
+                        }
+
+            }
+            
+            @keyframes j{
+                        to{
+                                width:60%;
+                                background-color:red;
+                        }
+
+            }
+            
+            @keyframes b{
+                        to{
+                                width:50%;
+                                background-color:purple;
+                        }
+
+            }
+            
+            @keyframes ja{
+                        to{
+                                width:55%;
+                                background-color:tomato;
+                        }
+
+            }
+            
+            @keyframes cc{
+                        to{
+                                width:50%;
+                                background-color:brown;
+                        }
+
+            }
+
+
+        </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="h">html</li>
+            <li class="c">css</li>
+            <li class="j">js</li>
+            <li class="b">bootstrap</li>
+            <li class="ja">java</li>
+            <li class="cc">c++</li>
+
+        </ul>
+
+
+
+    </div>
+    
+    
+</body>
+</html>

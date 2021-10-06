@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            text-align:center;
+            margin-top:100px;
+        }
+        button{
+            height:60px;
+            width:140px;
+            color:black;
+            font-weight:bolder;
+            position:relative;
+            z-index: 100;
+            
+            background-color: tomato;
+            color:white;
+          outline:none;
+            border:none;
+            transition:all .5s .3s;
+            border-radius:8px;
+        }
+      
+        button::before{
+            content:"";
+            width:0;
+            height:100%;
+            background-color: gray;
+            position:absolute;
+            top:0;
+            left:0;
+            line-height:60px;
+            transition:all .5s ease-in-out;
+            z-index: -1;
+            
+        }
+        
+        button::after{
+            content:"";
+            height:0;
+            width:100%;
+            background-color: gray;
+            position:absolute;
+            bottom:0;
+            left:0;
+            line-height:60px;
+            transition:all .5s ease-in-out;
+            z-index: -1;
+            
+        }
+
+        button:hover{
+            color:rgb(252, 191, 252);
+        }
+        button:hover::before{
+            width:100%;
+            border-radius:8px;
+        }
+
+        button:hover::after{
+            height:100%;
+            border-radius:8px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <button>
+            DOWNLOAD CV
+        </button>
+    </div>
+    
+</body>
+</html>
